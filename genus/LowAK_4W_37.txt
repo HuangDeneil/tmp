@@ -1,0 +1,20 @@
+G_Achromobacter	0.034
+G_Acinetobacter	0.012
+G_Akkermansia	0.277
+G_Aquabacterium	0.001
+G_Bacillus	0.004
+G_Brevundimonas	0.004
+G_Burkholderia-Paraburkholderia	0.003
+G_Caulobacter	0.001
+G_Chryseobacterium	0.002
+G_Enhydrobacter	0.001
+G_Enterobacter	0.004
+G_Escherichia-Shigella	0.006
+G_Methylobacterium	0.003
+G_Nitrobacter	0.002
+G_Pelomonas	0.002
+G_Pseudomonas	0.002
+G_Sphingomonas	0.007
+G_Staphylococcus	0.117
+G_uncultured_Roseobacter_sp.	0.002
+under 0.001	0.134

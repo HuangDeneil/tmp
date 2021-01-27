@@ -1,0 +1,25 @@
+G_Achromobacter	0.013
+G_Acidibacter	0.001
+G_Acinetobacter	0.001
+G_Akkermansia	0.329
+G_Bacillus	0.003
+G_Bradyrhizobium	0.002
+G_Brevundimonas	0.006
+G_Burkholderia-Paraburkholderia	0.031
+G_Caulobacter	0.002
+G_Deinococcus	0.001
+G_Delftia	0.005
+G_Dermacoccus	0.001
+G_Enhydrobacter	0.001
+G_Enterobacter	0.002
+G_Escherichia-Shigella	0.003
+G_Lactobacillus	0.002
+G_Methanobrevibacter	0.004
+G_Nitrobacter	0.021
+G_Paracoccus	0.002
+G_Pelomonas	0.007
+G_Pseudomonas	0.003
+G_Sphingomonas	0.006
+G_Staphylococcus	0.028
+G_uncultured_bacterium	0.003
+under 0.001	0.030

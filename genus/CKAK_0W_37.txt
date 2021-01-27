@@ -1,0 +1,10 @@
+G_Achromobacter	0.012
+G_Akkermansia	0.209
+G_Caulobacter	0.001
+G_Enterobacter	0.004
+G_Nitrobacter	0.001
+G_Pantoea	0.005
+G_Pelomonas	0.001
+G_Pseudoclavibacter	0.002
+G_Staphylococcus	0.261
+under 0.001	0.407

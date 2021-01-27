@@ -1,0 +1,5 @@
+G_Achromobacter|S_Achromobacter_xylosoxidans_subsp._xylosoxidans	0.090
+G_Staphylococcus|S_Staphylococcus_pasteuri	0.386
+G_Staphylococcus|S_unclassified	0.030
+G_Staphylococcus|S_uncultured_organism	0.398
+under 0.01	0.096

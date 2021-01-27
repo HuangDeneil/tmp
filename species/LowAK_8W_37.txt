@@ -1,0 +1,14 @@
+G_Achromobacter|S_Achromobacter_xylosoxidans_subsp._xylosoxidans	0.245
+G_Akkermansia|S_uncultured_bacterium	0.146
+G_Bacillus|S_Bacillus_aryabhattai	0.017
+G_Bacillus|S_Bacillus_beringensis	0.011
+G_Bacillus|S_unclassified	0.025
+G_Caulobacter|S_uncultured_bacterium	0.023
+G_Enhydrobacter|S_uncultured_bacterium	0.010
+G_Escherichia-Shigella|S_Escherichia_coli	0.012
+G_Nitrobacter|S_uncultured_bacterium	0.085
+G_Pelomonas|S_uncultured_bacterium	0.025
+G_Sphingomonas|S_Sphingomonas_aquatilis	0.028
+G_Sphingomonas|S_unclassified	0.020
+G_Sphingomonas|S_uncultured_bacterium	0.138
+under 0.01	0.960

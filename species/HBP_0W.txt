@@ -1,0 +1,9 @@
+G_Acinetobacter|S_Acinetobacter_calcoaceticus	0.034
+G_Citrobacter|S_Pantoea_agglomerans	0.040
+G_Enterobacter|S_Enterobacter_hormaechei	0.058
+G_Enterobacter|S_unclassified	0.438
+G_Klebsiella|S_Klebsiella_pneumoniae	0.018
+G_Klebsiella|S_uncultured_bacterium	0.075
+G_Kosakonia|S_uncultured_Enterobacter_sp.	0.022
+G_Pantoea|S_Pantoea_agglomerans	0.198
+under 0.01	0.117

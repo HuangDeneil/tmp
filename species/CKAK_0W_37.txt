@@ -1,0 +1,7 @@
+G_Achromobacter|S_Achromobacter_xylosoxidans_subsp._xylosoxidans	0.058
+G_Akkermansia|S_uncultured_bacterium	0.417
+G_Enterobacter|S_unclassified	0.016
+G_Staphylococcus|S_Staphylococcus_capitis_subsp._capitis	0.027
+G_Staphylococcus|S_unclassified	0.020
+G_Staphylococcus|S_uncultured_organism	0.413
+under 0.01	0.473

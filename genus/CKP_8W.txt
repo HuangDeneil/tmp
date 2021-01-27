@@ -1,0 +1,8 @@
+G_Achromobacter	0.013
+G_Acinetobacter	0.002
+G_Caulobacter	0.001
+G_Enterobacter	0.008
+G_Pantoea	0.007
+G_Pelomonas	0.001
+G_Staphylococcus	0.139
+under 0.001	0.236

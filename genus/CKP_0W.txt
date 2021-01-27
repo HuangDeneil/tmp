@@ -1,0 +1,22 @@
+G_Achromobacter	0.017
+G_Acinetobacter	0.002
+G_Bacillus	0.009
+G_Burkholderia-Paraburkholderia	0.002
+G_Caulobacter	0.003
+G_Citrobacter	0.016
+G_Cronobacter	0.002
+G_Enterobacter	0.215
+G_Escherichia-Shigella	0.007
+G_Herbaspirillum	0.002
+G_Klebsiella	0.041
+G_Kosakonia	0.009
+G_Nitrobacter	0.003
+G_Pantoea	0.080
+G_Pelomonas	0.001
+G_Pseudoclavibacter	0.004
+G_Sphingomonas	0.001
+G_Staphylococcus	0.106
+G_Stenotrophomonas	0.002
+G_unclassified	0.001
+G_uncultured_bacterium	0.002
+under 0.001	0.440
