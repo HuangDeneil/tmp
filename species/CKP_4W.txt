@@ -1,9 +1,9 @@
-G_Achromobacter|S_Achromobacter_xylosoxidans_subsp._xylosoxidans	0.027
-G_Enterobacter|S_unclassified	0.016
-G_Pantoea|S_Pantoea_agglomerans	0.013
-G_Staphylococcus|S_Staphylococcus_capitis_subsp._capitis	0.015
-G_Staphylococcus|S_Staphylococcus_pasteuri	0.545
-G_Staphylococcus|S_Staphylococcus_saprophyticus_subsp._saprophyticus	0.010
-G_Staphylococcus|S_unclassified	0.033
-G_Staphylococcus|S_uncultured_organism	0.279
-under 0.01	0.072
+G_Achromobacter|S_Achromobacter_xylosoxidans_subsp._xylosoxidans	2.686
+G_Enterobacter|S_unclassified	1.599
+G_Pantoea|S_Pantoea_agglomerans	1.345
+G_Staphylococcus|S_Staphylococcus_capitis_subsp._capitis	1.462
+G_Staphylococcus|S_Staphylococcus_pasteuri	54.511
+G_Staphylococcus|S_Staphylococcus_saprophyticus_subsp._saprophyticus	1.043
+G_Staphylococcus|S_unclassified	3.305
+G_Staphylococcus|S_uncultured_organism	27.853
+under 1%	7.234

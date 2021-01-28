@@ -1,10 +1,10 @@
-G_Achromobacter|S_Achromobacter_xylosoxidans_subsp._xylosoxidans	0.029
-G_Acinetobacter|S_Acinetobacter_calcoaceticus	0.042
-G_Citrobacter|S_Pantoea_agglomerans	0.039
-G_Enterobacter|S_Enterobacter_hormaechei	0.051
-G_Enterobacter|S_unclassified	0.404
-G_Klebsiella|S_Klebsiella_pneumoniae	0.022
-G_Klebsiella|S_uncultured_bacterium	0.080
-G_Kosakonia|S_uncultured_Enterobacter_sp.	0.019
-G_Pantoea|S_Pantoea_agglomerans	0.196
-under 0.01	0.120
+G_Achromobacter|S_Achromobacter_xylosoxidans_subsp._xylosoxidans	2.886
+G_Acinetobacter|S_Acinetobacter_calcoaceticus	4.168
+G_Citrobacter|S_Pantoea_agglomerans	3.856
+G_Enterobacter|S_Enterobacter_hormaechei	5.074
+G_Enterobacter|S_unclassified	40.361
+G_Klebsiella|S_Klebsiella_pneumoniae	2.213
+G_Klebsiella|S_uncultured_bacterium	7.950
+G_Kosakonia|S_uncultured_Enterobacter_sp.	1.872
+G_Pantoea|S_Pantoea_agglomerans	19.649
+under 1%	11.972

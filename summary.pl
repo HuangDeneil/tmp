@@ -32,8 +32,10 @@ my (%CKAK_0W_28, %CKAK_4W_28, %CKAK_8W_28);
 my (%LowAK_0W_28,%LowAK_4W_28,%LowAK_8W_28);
 
 my $threshold = 0.01;
-my $persentage ;
-my $low = "under $threshold";
+my $persentage;
+
+$persentage=$threshold*100;
+my $low = "under $persentage%";
 
 my @condition=qw/HBP_0W HBP_4W HBP_8W LBP_0W LBP_4W LBP_8W NBP_0W NBP_4W NBP_8W CKP_0W CKP_4W CKP_8W CKAK_0W_37 CKAK_4W_37 CKAK_8W_37 LowAK_0W_37 LowAK_4W_37 LowAK_8W_37 CKAK_0W_28 CKAK_4W_28 CKAK_8W_28 LowAK_0W_28 LowAK_4W_28 LowAK_8W_28/;
 
@@ -118,15 +120,15 @@ while(<IN>)
     $Class="C_$tmp[2]";
     $Order="O_$tmp[3]";
     $Family="F_$tmp[4]";
-    $Genus="G_$tmp[5]";
-    $Species="S_$tmp[6]";
+    $Genus="$tmp[5]";
+    $Species="$tmp[6]";
     
     if($ARGV[1] eq "s")
-    {$name = "$Genus|$Species";}
+    {$name = "G_$Genus|S_$Species";}
     elsif($ARGV[1] eq "g")
     {$name = "$Genus";}
     else 
-    {$name = "$Genus|$Species";}
+    {$name = "G_$Genus|S_$Species";}
     
     if($tmp[7]/$HBP_0W{"total"} < $threshold ){$HBP_0W{$low}=$HBP_0W{$low}+$tmp[7]}
     else{$HBP_0W{$name} = $tmp[7];}
@@ -191,7 +193,7 @@ close IN;
 open (OUT,">HBP_0W.txt")||die "$!";
 foreach (sort keys %HBP_0W)
 {
-    $persentage = $HBP_0W{$_}/$HBP_0W{"total"};
+    $persentage = $HBP_0W{$_}/$HBP_0W{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total" ){}
     else{print OUT "$_\t$persentage\n";}
@@ -202,7 +204,7 @@ close OUT;
 open (OUT,">HBP_4W.txt")||die "$!";
 foreach (sort keys %HBP_4W)
 {
-    $persentage = $HBP_4W{$_}/$HBP_4W{"total"};
+    $persentage = $HBP_4W{$_}/$HBP_4W{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -213,7 +215,7 @@ close OUT;
 open (OUT,">HBP_8W.txt")||die "$!";
 foreach (sort keys %HBP_8W)
 {
-    $persentage = $HBP_8W{$_}/$HBP_8W{"total"};
+    $persentage = $HBP_8W{$_}/$HBP_8W{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -224,7 +226,7 @@ close OUT;
 open (OUT,">LBP_0W.txt")||die "$!";
 foreach (sort keys %LBP_0W)
 {
-    $persentage = $LBP_0W{$_}/$LBP_0W{"total"};
+    $persentage = $LBP_0W{$_}/$LBP_0W{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -235,7 +237,7 @@ close OUT;
 open (OUT,">LBP_4W.txt")||die "$!";
 foreach (sort keys %LBP_4W)
 {
-    $persentage = $LBP_4W{$_}/$LBP_4W{"total"};
+    $persentage = $LBP_4W{$_}/$LBP_4W{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -247,7 +249,7 @@ close OUT;
 open (OUT,">LBP_8W.txt")||die "$!";
 foreach (sort keys %LBP_8W)
 {
-    $persentage = $LBP_8W{$_}/$LBP_8W{"total"};
+    $persentage = $LBP_8W{$_}/$LBP_8W{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -258,7 +260,7 @@ close OUT;
 open (OUT,">NBP_0W.txt")||die "$!";
 foreach (sort keys %NBP_0W)
 {
-    $persentage = $NBP_0W{$_}/$NBP_0W{"total"};
+    $persentage = $NBP_0W{$_}/$NBP_0W{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -269,7 +271,7 @@ close OUT;
 open (OUT,">NBP_4W.txt")||die "$!";
 foreach (sort keys %NBP_4W)
 {
-    $persentage = $NBP_4W{$_}/$NBP_4W{"total"};
+    $persentage = $NBP_4W{$_}/$NBP_4W{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -280,7 +282,7 @@ close OUT;
 open (OUT,">NBP_8W.txt")||die "$!";
 foreach (sort keys %NBP_8W)
 {
-    $persentage = $NBP_8W{$_}/$NBP_8W{"total"};
+    $persentage = $NBP_8W{$_}/$NBP_8W{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -291,7 +293,7 @@ close OUT;
 open (OUT,">CKP_0W.txt")||die "$!";
 foreach (sort keys %CKP_0W)
 {
-    $persentage = $CKP_0W{$_}/$CKP_0W{"total"};
+    $persentage = $CKP_0W{$_}/$CKP_0W{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -302,7 +304,7 @@ close OUT;
 open (OUT,">CKP_4W.txt")||die "$!";
 foreach (sort keys %CKP_4W)
 {
-    $persentage = $CKP_4W{$_}/$CKP_4W{"total"};
+    $persentage = $CKP_4W{$_}/$CKP_4W{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -313,7 +315,7 @@ close OUT;
 open (OUT,">CKP_8W.txt")||die "$!";
 foreach (sort keys %CKP_8W)
 {
-    $persentage = $CKP_8W{$_}/$CKP_8W{"total"};
+    $persentage = $CKP_8W{$_}/$CKP_8W{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -324,7 +326,7 @@ close OUT;
 open (OUT,">CKAK_0W_37.txt")||die "$!";
 foreach (sort keys %CKAK_0W_37)
 {
-    $persentage = $CKAK_0W_37{$_}/$CKAK_0W_37{"total"};
+    $persentage = $CKAK_0W_37{$_}/$CKAK_0W_37{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -335,7 +337,7 @@ close OUT;
 open (OUT,">CKAK_4W_37.txt")||die "$!";
 foreach (sort keys %CKAK_4W_37)
 {
-    $persentage = $CKAK_4W_37{$_}/$CKAK_4W_37{"total"};
+    $persentage = $CKAK_4W_37{$_}/$CKAK_4W_37{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -346,7 +348,7 @@ close OUT;
 open (OUT,">CKAK_8W_37.txt")||die "$!";
 foreach (sort keys %CKAK_8W_37)
 {
-    $persentage = $CKAK_8W_37{$_}/$CKAK_8W_37{"total"};
+    $persentage = $CKAK_8W_37{$_}/$CKAK_8W_37{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -357,7 +359,7 @@ close OUT;
 open (OUT,">LowAK_0W_37.txt")||die "$!";
 foreach (sort keys %LowAK_0W_37)
 {
-    $persentage = $LowAK_0W_37{$_}/$LowAK_0W_37{"total"};
+    $persentage = $LowAK_0W_37{$_}/$LowAK_0W_37{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -368,7 +370,7 @@ close OUT;
 open (OUT,">LowAK_4W_37.txt")||die "$!";
 foreach (sort keys %LowAK_4W_37)
 {
-    $persentage = $LowAK_4W_37{$_}/$LowAK_4W_37{"total"};
+    $persentage = $LowAK_4W_37{$_}/$LowAK_4W_37{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -379,7 +381,7 @@ close OUT;
 open (OUT,">LowAK_8W_37.txt")||die "$!";
 foreach (sort keys %LowAK_8W_37)
 {
-    $persentage = $LowAK_8W_37{$_}/$LowAK_8W_37{"total"};
+    $persentage = $LowAK_8W_37{$_}/$LowAK_8W_37{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -390,7 +392,7 @@ close OUT;
 open (OUT,">CKAK_0W_28.txt")||die "$!";
 foreach (sort keys %CKAK_0W_28)
 {
-    $persentage = $CKAK_0W_28{$_}/$CKAK_0W_28{"total"};
+    $persentage = $CKAK_0W_28{$_}/$CKAK_0W_28{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -401,7 +403,7 @@ close OUT;
 open (OUT,">CKAK_4W_28.txt")||die "$!";
 foreach (sort keys %CKAK_4W_28)
 {
-    $persentage = $CKAK_4W_28{$_}/$CKAK_4W_28{"total"};
+    $persentage = $CKAK_4W_28{$_}/$CKAK_4W_28{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -412,7 +414,7 @@ close OUT;
 open (OUT,">CKAK_8W_28.txt")||die "$!";
 foreach (sort keys %CKAK_8W_28)
 {
-    $persentage = $CKAK_8W_28{$_}/$CKAK_8W_28{"total"};
+    $persentage = $CKAK_8W_28{$_}/$CKAK_8W_28{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -423,7 +425,7 @@ close OUT;
 open (OUT,">LowAK_0W_28.txt")||die "$!";
 foreach (sort keys %LowAK_0W_28)
 {
-    $persentage = $LowAK_0W_28{$_}/$LowAK_0W_28{"total"};
+    $persentage = $LowAK_0W_28{$_}/$LowAK_0W_28{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -434,7 +436,7 @@ close OUT;
 open (OUT,">LowAK_4W_28.txt")||die "$!";
 foreach (sort keys %LowAK_4W_28)
 {
-    $persentage = $LowAK_4W_28{$_}/$LowAK_4W_28{"total"};
+    $persentage = $LowAK_4W_28{$_}/$LowAK_4W_28{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}
@@ -445,7 +447,7 @@ close OUT;
 open (OUT,">LowAK_8W_28.txt")||die "$!";
 foreach (sort keys %LowAK_8W_28)
 {
-    $persentage = $LowAK_8W_28{$_}/$LowAK_8W_28{"total"};
+    $persentage = $LowAK_8W_28{$_}/$LowAK_8W_28{"total"}*100;
     $persentage = sprintf("%.3f", $persentage);
     if( $_ eq "total"){}
     else{print OUT "$_\t$persentage\n";}

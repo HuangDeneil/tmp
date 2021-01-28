@@ -1,14 +1,14 @@
-G_Achromobacter|S_Achromobacter_xylosoxidans_subsp._xylosoxidans	0.217
-G_Acinetobacter|S_uncultured_Acinetobacter_sp.	0.093
-G_Acinetobacter|S_uncultured_bacterium	0.184
-G_Aeromonas|S_unclassified	0.020
-G_Bacillus|S_unclassified	0.018
-G_Caulobacter|S_uncultured_bacterium	0.016
-G_Enterobacter|S_Enterobacter_hormaechei	0.017
-G_Enterobacter|S_Leclercia_adecarboxylata	0.020
-G_Enterobacter|S_unclassified	0.166
-G_Nitrobacter|S_uncultured_bacterium	0.015
-G_Pelomonas|S_uncultured_bacterium	0.017
-G_Pseudoclavibacter|S_uncultured_bacterium	0.023
-G_Stenotrophomonas|S_Stenotrophomonas_maltophilia	0.018
-under 0.01	0.177
+G_Achromobacter|S_Achromobacter_xylosoxidans_subsp._xylosoxidans	21.730
+G_Acinetobacter|S_uncultured_Acinetobacter_sp.	9.262
+G_Acinetobacter|S_uncultured_bacterium	18.357
+G_Aeromonas|S_unclassified	2.047
+G_Bacillus|S_unclassified	1.784
+G_Caulobacter|S_uncultured_bacterium	1.550
+G_Enterobacter|S_Enterobacter_hormaechei	1.672
+G_Enterobacter|S_Leclercia_adecarboxylata	1.994
+G_Enterobacter|S_unclassified	16.568
+G_Nitrobacter|S_uncultured_bacterium	1.535
+G_Pelomonas|S_uncultured_bacterium	1.667
+G_Pseudoclavibacter|S_uncultured_bacterium	2.335
+G_Stenotrophomonas|S_Stenotrophomonas_maltophilia	1.813
+under 1%	17.685

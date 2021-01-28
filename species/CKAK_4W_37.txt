@@ -1,6 +1,6 @@
-G_Achromobacter|S_Achromobacter_xylosoxidans_subsp._xylosoxidans	0.385
-G_Akkermansia|S_uncultured_bacterium	0.138
-G_Burkholderia-Paraburkholderia|S_Burkholderia_cepacia	0.201
-G_Nitrobacter|S_uncultured_bacterium	0.065
-G_Pelomonas|S_uncultured_bacterium	0.014
-under 0.01	0.301
+G_Achromobacter|S_Achromobacter_xylosoxidans_subsp._xylosoxidans	38.460
+G_Akkermansia|S_uncultured_bacterium	13.790
+G_Burkholderia-Paraburkholderia|S_Burkholderia_cepacia	20.088
+G_Nitrobacter|S_uncultured_bacterium	6.546
+G_Pelomonas|S_uncultured_bacterium	1.384
+under 1%	30.124

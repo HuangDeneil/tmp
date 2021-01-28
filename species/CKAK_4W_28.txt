@@ -1,4 +1,4 @@
-G_Achromobacter|S_Achromobacter_xylosoxidans_subsp._xylosoxidans	0.066
-G_Akkermansia|S_uncultured_bacterium	0.830
-G_Bacillus|S_unclassified	0.049
-under 0.01	0.055
+G_Achromobacter|S_Achromobacter_xylosoxidans_subsp._xylosoxidans	6.600
+G_Akkermansia|S_uncultured_bacterium	82.954
+G_Bacillus|S_unclassified	4.904
+under 1%	5.542

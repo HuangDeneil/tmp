@@ -1,9 +1,9 @@
-G_Achromobacter|S_Achromobacter_xylosoxidans_subsp._xylosoxidans	0.373
-G_Akkermansia|S_uncultured_bacterium	0.275
-G_Bacillus|S_Bacillus_aryabhattai	0.018
-G_Caulobacter|S_uncultured_bacterium	0.079
-G_Nitrobacter|S_uncultured_bacterium	0.012
-G_Pelomonas|S_uncultured_bacterium	0.031
-G_Sphingomonas|S_uncultured_bacterium	0.016
-G_uncultured_Roseobacter_sp.|S_uncultured_Roseobacter_sp.	0.011
-under 0.01	0.369
+G_Achromobacter|S_Achromobacter_xylosoxidans_subsp._xylosoxidans	37.329
+G_Akkermansia|S_uncultured_bacterium	27.492
+G_Bacillus|S_Bacillus_aryabhattai	1.847
+G_Caulobacter|S_uncultured_bacterium	7.945
+G_Nitrobacter|S_uncultured_bacterium	1.150
+G_Pelomonas|S_uncultured_bacterium	3.105
+G_Sphingomonas|S_uncultured_bacterium	1.599
+G_uncultured_Roseobacter_sp.|S_uncultured_Roseobacter_sp.	1.082
+under 1%	36.851
